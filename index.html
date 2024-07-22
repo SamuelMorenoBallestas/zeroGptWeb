@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="/index.js"></script>
+</head>
+<body onload="main()" class="bg-gradient-to-r from-cyan-50 to-blue-50 text-black font-mono">
+    <header class="bg-slate-200 p-5 flex justify-between items-center shadow-xl">
+        <h1 class="text-2xl font-bold">
+            GPT-Detector
+        </h1>
+        
+        <nav class="flex gap-12">
+            <a href="https://youtube.com" class="hover:text-slate-700">About us</a>
+            <a href="https://youtube.com" class="hover:text-slate-700">Github</a>
+            <a href="https://youtube.com" class="hover:text-slate-700">About project</a>
+        </nav>
+    </header>
+    <div id="main" class="justify-center flex flex-col items-center p-10">
+        <header class="st1 text-3xl">Enter text down below</header>
+        <div class="hidden p-10 items-start transition duration-1000 delay-200" id="st2">
+            <header id="ai_per" class=" font-bold text-2xl"></header>
+        </div>
+        <textarea name="input" class="p-2 text-base origin-right transition duration-1000 delay-100 mb-2 text-neutral-500 focus:text-neutral-600 rounded-lg w-3/4 h-96 m-10 shadow-xl border-solid border-neutral-400 border-2 focus:outline-none focus:border-neutral-900 resize-none" id="text_in"></textarea>
+        <nav class=" st1 flex justify-between w-3/4">
+            <button type="submit" onclick="subm()" class=" shadow-sm bg-sky-800 w-1/6 text-lg text-slate-200 rounded h-10 transition-colors duration-100 hover:bg-sky-600 active:bg-sky-800 ">Detect</button>
+
+            <nav class="flex justify-end">
+                <span class="text-neutral-400 transition duration-200 ease-out" id="count">0</span>
+                <span class="text-neutral-400 opacity-0 transition duration-200" id="hid_c">/1500</span>
+            </nav>
+        </nav>
+
+    </div>
+</body>
+</html>
